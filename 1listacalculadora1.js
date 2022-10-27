@@ -20,7 +20,7 @@ também uma função para exibir o histórico dos resultados.
 */
 var numeroA = parseInt(prompt("Insira um número"))
 var numeroB = parseInt(prompt("Insira um número"))
-
+var continuar = "s"
 function Somar(numeroA, numeroB){
     var somar = numeroA + numeroB
     return somar
@@ -34,6 +34,20 @@ function Multiplicar(numeroA, numeroB){
     return multiplica
 }
 function Dividir(){
-    console.log(numero1 / numero2)
-    
+    var divisao = numeroA / numeroB
+    return divisao
+}
+
+while(continuar == "s"){
+    var operacao = prompt("1 Para somar, 2 Para subtrair, 3 Para Multiplicar, 4 Para dividir.")
+    if (operacao == "1") {
+        console.log(Somar(numeroA,numeroB))
+    }else if(operacao == "2"){
+        console.log(Subtrair(numeroA, numeroB))
+    }else if (operacao == 3) {
+        console.log(Multiplicar(numeroA, numeroB))
+    }else{
+        console.log(Dividir(numeroA, numeroB))
+    }
+    continuar = prompt("Deseja continuar? s ou n")
 }
