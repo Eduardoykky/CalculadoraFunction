@@ -18,13 +18,12 @@ aplicação.
 também uma função para exibir o histórico dos resultados.
 
 */
-var numero1 = parseInt(prompt("Insira um número"))
-var numero2 = parseInt(prompt("Insira um número"))
-var pergunta = prompt("1 para somar 2 para divisão 3 para multi 4 para divisão")
+var numeroA = parseInt(prompt("Insira um número"))
+var numeroB = parseInt(prompt("Insira um número"))
 
-function Somar(){
-    console.log(numero1 + numero2)
-    
+function Somar(numeroA, numeroB){
+    var somar = (numeroA + numeroB)
+    return somar
 }
 function Subtrair(){
     console.log(numero1 - numero2)
