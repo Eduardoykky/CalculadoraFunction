@@ -22,16 +22,16 @@ var numeroA = parseInt(prompt("Insira um número"))
 var numeroB = parseInt(prompt("Insira um número"))
 
 function Somar(numeroA, numeroB){
-    var somar = (numeroA + numeroB)
+    var somar = numeroA + numeroB
     return somar
 }
-function Subtrair(){
-    console.log(numero1 - numero2)
-    
+function Subtrair(numeroA, numeroB){
+    var subtracao = numeroA - numeroB
+    return subtracao
 }
-function Multiplicar(){
-    console.log(numero1 * numero2)
-    
+function Multiplicar(numeroA, numeroB){
+    var multiplica = numeroA * numeroB
+    return multiplica
 }
 function Dividir(){
     console.log(numero1 / numero2)
